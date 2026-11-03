@@ -1,3 +1,5 @@
+import os
+
 def configuratie_aanmaken():
     prijs = 0
     print("\n===== CONFIGURATIE AANMAKEN =====")
@@ -142,14 +144,15 @@ def configuratie_opslaan(configuratie):
         print("Configuratie succesvol opgeslagen!")
 
 def configuratie_inlezen():
-    try:
+    if os.path.exists("configuraties.txt"):
         with open("configuraties.txt", "r") as bestand:
             configuratie = bestand.read()
+
         print("\n===== OPGESLAGEN CONFIGURATIE =====")
         print(configuratie)
-    except FileNotFoundError:
+    else:
         print("Er is nog geen opgeslagen configuratie gevonden.")
-        
+
 def hoofdmenu():
     configuratie = ""
     while True:
