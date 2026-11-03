@@ -1,0 +1,6 @@
+Automodel: Coupé
+Motortype: Hybride motor
+Kleur: Blauw
+Uitvoering: Luxury
+Extra optie: Parkeersensoren
+Totale prijs: €53000
