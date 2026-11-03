@@ -157,7 +157,7 @@ def hoofdmenu():
         print("1. Configuratie aanmaken")
         print("2. Configuratie opslaan")
         print("3. Configuratie inlezen")
-        print("4. Afsluiten")
+        print("4. Programma Afsluiten")
         keuze = input("\nMaak een keuze (1-4): ")
         if keuze == "1":
             configuratie = configuratie_aanmaken()
